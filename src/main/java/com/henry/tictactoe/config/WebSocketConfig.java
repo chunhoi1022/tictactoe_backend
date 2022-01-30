@@ -15,10 +15,11 @@ public class WebSocketConfig implements WebSocketMessageBrokerConfigurer {
      *
      * @param registry STOMP 端点
      */
+
     @Override
     public void registerStompEndpoints(StompEndpointRegistry registry) {
 
-        registry.addEndpoint("/game").withSockJS();
+        registry.addEndpoint("/tictactoe").withSockJS();
     }
 
     /**
